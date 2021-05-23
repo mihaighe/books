@@ -1,0 +1,26 @@
+{
+  "name": "books",
+  "version": "1.0.0",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.9",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.7",
+    "sharp": "^0.28.2",
+    "validator": "^13.6.0",
+    "web-vitals": "^1.1.2"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "env-cmd -f ./server/config/dev.env nodemon ./server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Book</title>
+    <link rel="shortcut icon" href="./img/js.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div>
+        {{>header}}
+
+        <div class="container">
+            <div class="small-container shadow" style="margin-right: 10px;">
+                <form class="formPadding" autocomplete="false" id="login-form">
+                    <p>
+                        <label class="w3-text-black"><b>Email</b></label>
+                        <input class="w3-input w3-border" autocomplete="off" placeholder="mail@mail.com" id="login-email" type="text"></p>
+                    <p>
+                        <label class="w3-text-black"><b>Password</b></label>
+                        <input class="w3-input w3-border" placeholder="test1234" id="login-password" type="password"></p>
+                    <p>
+                        <button class="w3-btn w3-black">Login</button></p>
+                </form>
+            </div>
+
+            <div class="small-container shadow">
+                <form class="formPadding" autocomplete="false" id="signup-form">
+                    <p>
+                        <label class="w3-text-black" autocomplete="off"><b>Name</b></label>
+                        <input class="w3-input w3-border" autocomplete="off" id="signup-name" type="text"></p>
+                    <p>
+                        <label class="w3-text-black"><b>Age</b></label>
+                        <input class="w3-input w3-border" id="signup-age" type="number"></p>
+                    <p>
+                        <label class="w3-text-black" autocomplete="off"><b>Email</b></label>
+                        <input class="w3-input w3-border" autocomplete="off" id="signup-email" type="text"></p>
+                    <p>
+                        <label class="w3-text-black"><b>Password</b></label>
+                        <input class="w3-input w3-border" id="signup-password" type="password"></p>
+                    <p>
+                        <button class="w3-btn w3-black">Register</button></p>
+                </form>
+            </div>
+
+            <div class="small-container shadow flexing" style="margin-left: 10px; padding-top: 50px">
+                <img class="moustache" src="./img/moustache.png" alt="moustache">
+                <h5 class="handlebars">Handlebars</h5>
+
+                <img class="mongodb" src="./img/mongodb.png" alt="mongodb">
+
+                <img class="express" src="./img/express.png" alt="express">
+
+                <img class="node" src="./img/node.png" alt="node">
+
+
+            </div>
+        </div>
+    </div>
+
+    {{user}}
+    {{>footer}}
+    <script src="js/signup.js"></script>
+</body>
+
+</html>

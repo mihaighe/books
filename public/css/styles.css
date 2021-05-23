@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+body {
+  color: #333333;
+  font-family: "Roboto Condensed", sans-serif;
+  max-width: 750px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+footer {
+  color: #888888;
+  border-top: 1px solid #eeeeee;
+  margin-top: 16px;
+  padding: 16px 0;
+}
+
+header {
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+
+h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+header a {
+  color: #888888;
+  margin-right: 16px;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.portrait {
+  width: 400px;
+}
+
+input {
+  border: 1px solid #cccccc;
+  padding: 8px;
+}
+
+label {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#geolocation-button {
+  padding: 8px 93px;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.login-width {
+  width: 96%;
+}
+
+/* .userDisplay {
+    display: flex;
+    flex-direction: column;
+} */
+
+.underline {
+  border: 2px solid black;
+  width: fit-content;
+  box-shadow: 2px 2px;
+  padding-left: 10px;
+}
+
+.myinput {
+  width: 100%;
+}
+
+.container {
+  width: 750px;
+  height: 450px;
+  display: flex;
+}
+
+.small-container {
+  width: 33.33%;
+  background-color: rgba(255, 255, 255, 0.918);
+}
+
+.shadow {
+  box-shadow: 3px 0px 8px 0px #888888;
+  padding: 5px;
+}
+
+.avatarInfo {
+  font-size: 16px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.border {
+  border: 1px solid black;
+  margin: 12px;
+  border-radius: 2px;
+}
+
+.flexing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.myButton {
+  margin: 8px;
+  width: 170px;
+}
+
+.moustache {
+  margin-top: -43px;
+  width: 60%;
+  height: 34%;
+}
+
+.mongodb {
+  width: 140%;
+  height: 45%;
+}
+
+.express {
+  margin-top: -16px;
+  width: 70%;
+  height: 13%;
+}
+
+.node {
+  margin-top: 20px;
+  width: 62%;
+  height: 22%;
+}
+
+.notFound {
+  margin-top: -25px;
+  margin-left: 55px;
+  width: 86%;
+  height: 107%;
+}
+
+.formPadding {
+  padding: 5px 15px 5px 15px;
+}
+
+.handlebars {
+  margin: -40px;
+  font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.myBooks {
+  overflow-y: scroll;
+  width: inherit;
+  border-top: 1px solid #dddddd;
+  margin-top: 2px;
+}
+
+.book {
+  font-size: 15px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.deleteButton {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.w3-check {
+  width: 20px;
+}
+
+.avatarImage {
+  width: 100%;
+  height: 53%;
+}
+
+.active {
+  background-color: seagreen !important;
+  font-weight: bold;
+}
+
+#oldest {
+  width: 100px;
+}
+
+.bookInput {
+  height: 33px;
+  border: 2px solid black !important;
+  border-radius: 10px;
+  outline: none;
+}
+
+.rating {
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.rating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
+.rating label:last-child {
+  position: static;
+}
+
+.rating label:nth-child(1) {
+  z-index: 5;
+}
+
+.rating label:nth-child(2) {
+  z-index: 4;
+}
+
+.rating label:nth-child(3) {
+  z-index: 3;
+}
+
+.rating label:nth-child(4) {
+  z-index: 2;
+}
+
+.rating label:nth-child(5) {
+  z-index: 1;
+}
+
+.rating label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.rating label .icon {
+  float: left;
+  color: transparent;
+}
+
+.rating label:last-child .icon {
+  color: #000;
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+  color: rgb(255, 208, 0);
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+  color: #000;
+  text-shadow: 0 0 5px #09f;
+}
+
+.custom-radio input {
+  display: none;
+}
+
+.emojis {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.emoji {
+  margin: 5px;
+  padding-bottom: 4px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.custom-radio input:checked + .emoji {
+  border-bottom: 2px solid black;
+}
+
+.modal-container {
+  opacity: 0;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.3s ease;
+}
+
+.modal-container.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 30px 50px;
+  width: 600px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+th {
+  text-align: start;
+}
+
+td,  th {
+  border: 1px solid #ddd;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}

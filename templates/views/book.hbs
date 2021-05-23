@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Book</title>
+    <link rel="shortcut icon" href="./img/js.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <div>
+        <div class="main-content">
+            {{>header}}
+            <div id="myTarget" class="container shadow flexing">
+                <div style="align-items:unset;">
+                    <div class="w3-bar">
+                        <a class="w3-button w3-border" id="title">Title ⬆️</a>
+                        <a class="w3-button w3-border" id="author">Author ⬇️</a>
+                    </div>
+                </div>
+                <table id="bookContainer" class="myBooks">
+                  
+                </table>
+            </div>
+
+            <div class="modal-container" id="modal_container">
+              <div class="modal">
+                <form id="bookForm" style="margin-top: 60px; ">
+                    <input id="bookId" autocomplete="off" class="w3-input w3-border"
+                         type="text" style="display: none">
+                    <input id="bookTitle" autocomplete="off" class="w3-input w3-border"
+                        placeholder="Enter book title" type="text">
+                    <input id="bookAuthor" autocRAomplete="off" class="w3-input w3-border"
+                        placeholder="Enter book author" type="text">
+                    <input id="bookDescription" autocomplete="off" class="w3-input w3-border"
+                        placeholder="Enter book description" type="text">
+                    <select class="w3-input w3-border" name="cars" id="bookCategory">
+            
+                    </select>
+                    <div id="bookRatings" class="emojis">
+                        <label class="custom-radio">
+                            <input type="radio" name="ratings" value="like" />
+                            <span class="emoji">🙂</span>
+                        </label>
+                        <label class="custom-radio">
+                            <input type="radio" name="ratings" value="neutral" />
+                            <span class="emoji">😐</span>
+                        </label>
+                        <label class="custom-radio">
+                            <input type="radio" name="ratings" value="dislike" />
+                            <span class="emoji">🙁</span>
+                        </label>
+                    </div>
+                    <div id="bookStars" class="rating">
+                        <label>
+                            <input type="radio" name="stars" value="1" />
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="stars" value="2" />
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input type="radio" checked name="stars" value="3" />
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>   
+                        </label>
+                        <label>
+                            <input type="radio" name="stars" value="4" />
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="stars" value="5" />
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                        </label>
+                    </div>
+                    <div style="text-align: center;">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+              </div>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+    <script src="js/book.js"></script>
+</body>
+
+</html>

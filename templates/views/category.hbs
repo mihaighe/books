@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>category</title>
+    <link rel="shortcut icon" href="./img/js.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div>
+        <div class="main-content">
+            {{>header}}
+            <div id="myTarget" class="container shadow flexing">
+                <form id="categoryForm">
+                    <input id="categoryDescription" autocomplete="off" class="w3-input w3-border"
+                        placeholder="Insert a new category" type="text">
+                </form>
+                <table id="categoryContainer" class="myCategories">
+
+                </table>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+    <script src="js/category.js"></script>
+</body>
+
+</html>

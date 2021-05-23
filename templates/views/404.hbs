@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>404</title>
+    <link rel="shortcut icon" href="./img/js.png">
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div>
+        {{>header}}
+
+        <div class="container shadow">
+            <img class="notFound" src="./img/404.png" alt="404">
+            <p style="margin-left: -20px">{{errorMessage}}</p>
+
+        </div>
+    </div>
+    {{>footer}}
+</body>
+
+</html>
